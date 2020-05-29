@@ -40,7 +40,7 @@ def collapse_level(df,categorical_vars,keep_level=20):
 # Cell
 
 class cat_treat:
-    import numpy as np
+
     def __init__(self, df, categorical_vars):
 
         #attributes
