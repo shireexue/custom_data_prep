@@ -26,7 +26,7 @@ def collapse_level(df,categorical_vars,keep_level=20):
     numclasses={}
     catclasses={}
     for c in categorical_vars:
-        uni_cnt=(len(numpy.unique(df[[c]])))
+        uni_cnt=(len(np.unique(df[[c]])))
         numclasses[c]=uni_cnt
         if uni_cnt>keep_level:
             df_group=df.groupby(c).agg(pred_rate=('target','mean'),cnt=('Name','count')).reset_index()\
