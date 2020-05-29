@@ -2,12 +2,13 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"reduce_cardinality": "00_core.ipynb"}
+index = {"collapse_level": "00_core.ipynb",
+         "cat_treat": "00_core.ipynb"}
 
 modules = ["core.py"]
 
-doc_url = "https://fastai.github.io/nbdev_template/"
+doc_url = "https://shireexue.github.io/custom_data_prep/"
 
-git_url = "https://github.com/fastai/nbdev_template/tree/master/"
+git_url = "https://github.com/shireexue/custom_data_prep/tree/master/"
 
 def custom_doc_links(name): return None
