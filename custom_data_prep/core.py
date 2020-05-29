@@ -53,7 +53,7 @@ class cat_treat:
         both high target rates and frequency. The number of levels to keep is defined by user.
 
         Parameters
-        ----------
+        -----------
         df : pandas dataframe, required
             Dataframe to process
 
