@@ -3,3 +3,4 @@
 *.gitconfig
 *.DS_Store
 *.gitattributes
+*.log

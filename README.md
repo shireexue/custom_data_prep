@@ -1,21 +1,6 @@
 # Welcome to Custom_Data_Prep
-> This is a library to help data scientist to efficiently prepare datasets for analysis and modeling
+> This is a library built with NBDEV to help data scientist to efficiently prepare datasets for analysis and modeling
 
-
-```python
-%load_ext autoreload
-%autoreload 2
-```
-
-    The autoreload extension is already loaded. To reload it, use:
-      %reload_ext autoreload
-
-
-```python
-import pandas as pd
-from custom_data_prep.core import cat_treat
-import numpy as np
-```
 
 ## Install
 
