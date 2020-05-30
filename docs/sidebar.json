@@ -1,10 +1,6 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "custom_data_prep": {
+    "Overview": "/",
+    "Custom_data_prep": "/core"
   }
 }

@@ -3,6 +3,8 @@
 __all__ = ['collapse_level', 'cat_treat']
 
 # Cell
+import numpy as np
+
 def collapse_level(df,categorical_vars,keep_level=20):
     """Collapse levels for categorical variables with high cardinality.
 
@@ -38,7 +40,6 @@ def collapse_level(df,categorical_vars,keep_level=20):
     return df,catclasses
 
 # Cell
-
 class cat_treat:
 
     def __init__(self, df, categorical_vars):
@@ -47,7 +48,7 @@ class cat_treat:
         self.df=df
         self.categorical_vars=categorical_vars
 
-    def reduce_cardinality(self,df,categorical_vars,keep_level=20):
+    def reduce_cardinality(self,keep_level=20):
         """Collapse levels for categorical variables with high cardinality.
 
         This operation identifies categorical variables with high cardinality and combine into levels that have
