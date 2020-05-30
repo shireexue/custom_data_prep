@@ -37,90 +37,17 @@ df=pd.DataFrame(data)
 Result before collapsing - 'Country' feature has 6 levels
 
 ```python
-df
+print(df)
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Country</th>
-      <th>target</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Tom</td>
-      <td>33</td>
-      <td>US</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>nick</td>
-      <td>22</td>
-      <td>AU</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>krish</td>
-      <td>41</td>
-      <td>UK</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>jack</td>
-      <td>12</td>
-      <td>CN</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Amy</td>
-      <td>34</td>
-      <td>US</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Lily</td>
-      <td>21</td>
-      <td>JP</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Carol</td>
-      <td>60</td>
-      <td>NZ</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+        Name Age Country  target
+    0    Tom  33      US       1
+    1   nick  22      AU       0
+    2  krish  41      UK       0
+    3   jack  12      CN       1
+    4    Amy  34      US       0
+    5   Lily  21      JP       1
+    6  Carol  60      NZ       1
 
 
 ```python
@@ -134,88 +61,15 @@ df_new,catclasses=o.reduce_cardinality(keep_level=3)
 Result after collapsing - Now 'Country' has been reduced to 3 levels only 
 
 ```python
-df_new
+print(df_new)
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Country</th>
-      <th>target</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Tom</td>
-      <td>33</td>
-      <td>US</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>nick</td>
-      <td>22</td>
-      <td>OTHER</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>krish</td>
-      <td>41</td>
-      <td>OTHER</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>jack</td>
-      <td>12</td>
-      <td>CN</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Amy</td>
-      <td>34</td>
-      <td>US</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Lily</td>
-      <td>21</td>
-      <td>OTHER</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Carol</td>
-      <td>60</td>
-      <td>OTHER</td>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+        Name Age Country  target
+    0    Tom  33      US       1
+    1   nick  22   OTHER       0
+    2  krish  41   OTHER       0
+    3   jack  12      CN       1
+    4    Amy  34      US       0
+    5   Lily  21   OTHER       1
+    6  Carol  60   OTHER       1
 
