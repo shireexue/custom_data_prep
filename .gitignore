@@ -1,3 +1,5 @@
 */.ipynb_checkpoints/*
-.DS_Store
-
+*.last_checked
+*.gitconfig
+*.DS_Store
+*.gitattributes
